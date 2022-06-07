@@ -1,4 +1,4 @@
-package internal
+package handler
 
 import (
 	"fmt"
@@ -8,11 +8,9 @@ import (
 type Handler struct {
 }
 
-//This is for Dependence injection...
+//This is for Dependency injection...
 func NewHandler() *Handler {
-
 	return &Handler{}
-
 }
 
 //Basic handler r - http request, w - response
